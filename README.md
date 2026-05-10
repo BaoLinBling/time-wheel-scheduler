@@ -44,13 +44,14 @@
 兼容主流 Linux 系统、Windows 系统、macOS 系统以及 WSL 子系统环境。
 
 ## 编译部署
+```text
 git clone https://github.com/BaoLinBling/time-wheel-scheduler.git
 cd time-wheel-scheduler
 mkdir -p build && cd build
 cmake ..
 make -j$(nproc)
 ./time_wheel_scheduler_demo
-
+```
 ## 项目目录结构
 ```text
 time-wheel-scheduler
@@ -63,7 +64,6 @@ time-wheel-scheduler
 └── README.md       项目说明文档
 ```
 ## 基础使用示例
-#运行
 // 创建时间轮调度器实例
 TimeWheelScheduler scheduler;
 // 启动后台调度线程
